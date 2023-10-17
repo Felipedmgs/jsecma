@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        
+        body:{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Iniciando os estudos</h1>
+    <p>resultado gerado</p>
+    <p>Aprendendo <strong>DOM</strong> no js</p>
+<div id="msg">Clique em mim</div>
+<script>
+    //DOM, qual sua utilidade e como usa lo? Document object model
+    //conjunto de objetos 
+
+    //arvore dom
+    //escrevendo com o dom
+    window.document.write(window.document.URL);  
+
+    //pegando o conteudo da tag:
+    //colocando indice para determinar qul o tag que irei pegar.
+ /*   var p1 = window.document.getElementsByTagName('p')[0];
+    window.document.write(p1.innerText);  
+    document.write(p1.innerHTML); //vem formatado
+    //window.alert(p1.innerHTML); //vem formatado
+
+
+    var p2 = window.document.getElementsByTagName('p')[1];
+    window.document.write(p2.innerText);  
+
+    var corpo = window.document.body;
+    corpo.style.background = 'blue';
+    p1.style.color = 'red';
+*/
+
+   /* var d = window.document.getElementById('msg');
+    d.style.background = 'red';
+    //d.innerHTML = 'Estou mudando o texto';
+*/
+    var d = window.document.querySelector('div#msg'); //quando for id
+ //   var d = window.document.querySelector('div.msg'); //quando for classe
+
+    d.style.background = 'red';
+
+
+
+
+</script>
+
+    
+</body>
+</html>;

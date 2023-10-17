@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--importando bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+<!--lib jquery imprtada para usar modal-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--classe do modal em bootstrap-->
+    <div class="modal fade" id="modal-mensagem">
+        <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                     <h4 class="modal-title">Título da mensagem</h4>
+                 </div>
+                 <div class="modal-body">
+                     <p>"Conteúdo da mensagem" + nome </p>
+                     
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+     <button class="btn btn-primary" data-toggle="modal" data-target="#modal-mensagem">
+        Exibir mensagem
+    </button>
+
+
+
+    
+
+    <script>
+        var nome = window.prompt('What is your program lenguage?')
+        document.write(`sua linguagem preferida é: ${nome}`);
+                //ja informando que é um int
+        var n1 = Number.parseInt(window.prompt('numero 1'));
+        var n2 = window.prompt("numero 2");
+        var n3 = Number(window.prompt("numero 3"));
+    
+        //informa na conta que é int
+        var s = n1 + parseInt(n2) + n3;
+
+        window.alert(`resultado ${s}`)
+
+        var n4 = 10.9;
+        //permite definir quantidade de casas decimais
+        n4.toFixed(3);
+        window.alert(`resultado ${n4}`);
+
+//        definindo regiao moeda
+        n4.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        window.alert(`resultado ${n4}`);
+
+        //converto para string meu resultado
+//       String(s);
+//        s.toString;
+
+       
+       //abre pop up 
+       popup =  window.open(s, '', "width=250 height=250")
+       popup.document.write(s);
+       
+    </script>
+
+</body>
+</html>

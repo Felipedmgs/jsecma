@@ -1,0 +1,37 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div{
+    text-align: center;
+    padding: 5px;
+}
+
+
+#imagem {
+        width: 150px; /* Defina a largura da imagem conforme necessário */
+        height: 150px; /* Defina a altura da imagem conforme necessário */
+        border-radius: 50%; /* Torna a imagem redonda definindo o raio dos cantos como 50% */
+        overflow: hidden; /* Remove qualquer conteúdo que se estenda além da borda circular */
+}

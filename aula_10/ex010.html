@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    
+    <label>Velocidade do carro: <input type="number" name="txtvel" id="txtvel">km/h</label>
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">    </div>
+
+    <script>    
+            /*função de concula ue o bn chama*/    
+        function calcular(){
+
+            var txtv = window.document.querySelector('input#txtvel'); /*pego o que for digitado no input*/
+            var res = window.document.querySelector('div#res'); /*crio a variavel res e referencio ela a div*/
+            var vel = Number(txtv.value); //transforme em numero a variavel
+            res.innerHTML = `<p>Sua velocidade atual é: <strong> ${vel} km/h</strong></p>`; //escrevo na div o resultado
+
+            if(vel > 60){
+                res.innerHTML += `<p>Você foi <strong>Multado</strong></p>`;
+            }
+
+
+            res.innerHTML += `<p>Dirija com cuidado</p>`;
+
+
+        }
+    </script>
+    
+    
+</body>
+</html>
